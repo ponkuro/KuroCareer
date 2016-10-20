@@ -10,7 +10,7 @@ ja:
         password_confirmation: "確認用パスワード"
         remember_me: "ログイン情報を記憶する"
     models:
-      user: "ユーザ"
+      user: "ユーザー"
   devise:
     confirmations:
       confirmed: "ユーザーアカウントの登録が完了しました。"
@@ -33,18 +33,18 @@ ja:
         action: "アカウント確認"
         greeting: "ようこそ、%{recipient}さん!"
         instruction: "次のリンクでメールアドレスの確認が完了します:"
-        subject: "【 SITE_NAME 】ユーザーアカウントの有効化について"
+        subject: "【 黒瀬浩之 】ユーザーアカウントの有効化について"
       password_change:
         greeting: "こんにちは、%{recipient}さん!"
         message: "あなたのパスワードが再設定されたことを通知します。"
-        subject: "【 SITE_NAME 】パスワードの変更について"
+        subject: "【 黒瀬浩之 】パスワードの変更について"
       reset_password_instructions:
         action: "パスワード変更"
         greeting: "こんにちは、%{recipient}さん!"
         instruction: "誰かがパスワードの再設定を希望しました。次のリンクでパスワードの再設定が出来ます。"
         instruction_2: "あなたが希望したのではないのなら、このメールは無視してください。"
         instruction_3: "上のリンクにアクセスして新しいパスワードを設定するまで、パスワードは変更されません。"
-        subject: "【 SITE_NAME 】パスワードの再設定について"
+        subject: "【 黒瀬浩之 】パスワードの再設定について"
       unlock_instructions:
         action: "アカウントのロック解除"
         greeting: "こんにちは、%{recipient}さん!"
@@ -116,5 +116,5 @@ ja:
       not_found: "は見つかりませんでした。"
       not_locked: "は凍結されていません。"
       not_saved:
-        one: "エラーが発生したため %{resource} は保存されませんでした:"
-        other: "%{count} 件のエラーが発生したため %{resource} は保存されませんでした:"
+        one: "エラーが発生したため%{resource}の登録に失敗しました:"
+        other: "%{count}件のエラーが発生したため%{resource}の登録に失敗しました:"

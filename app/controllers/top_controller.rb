@@ -1,9 +1,11 @@
 class TopController < ApplicationController
   def index
-    if user_signed_in?
-      redirect_to user_url(current_user.id)
-    else
-      redirect_to new_user_registration_url
+    respond_to do |format|
+      if user_signed_in?
+        format.html { render :user }
+      else
+        format.html { render :visitor }
+      end
     end
   end
 end

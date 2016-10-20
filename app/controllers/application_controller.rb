@@ -4,6 +4,16 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_filter :configure_permitted_parameters, if: :devise_controller?
   
+  # ログインした時の遷移先
+  def after_sign_in_path_for(resource)
+    resume_url
+  end
+  
+  # ログアウトした時の遷移先
+  def after_sign_out_path_for(resource)
+    new_user_session_url
+  end
+  
   # CanCanでアクセス権エラーが発生した場合
   rescue_from CanCan::AccessDenied do |exception|
     redirect_to main_app.root_url, :alert => exception.message

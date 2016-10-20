@@ -1,0 +1,23 @@
+<div id="profile" class="section_container bg-white">
+  <div class="container-width_adjuster">
+    <div class="section_header">
+      <h2>プロフィール</h2>
+    </div>
+    <div class="profile_area">
+      <div class="profile_img">
+        <img src="<%= asset_path "profile-image.jpg" %>">
+      </div>
+      <div class="profile_comment">
+        1984年岡山生まれ。神戸大学経営学部を卒業後、日新製鋼株式会社に入社。
+        新卒から約８年半にわたって経理関連の業務に従事しており、社内ではステンレス原価計算のエキスパートとして活躍中。
+        <br>
+        趣味は投資と読書。金融資産の半分をドル建てで保有しており、日経平均よりも米国金利とNYダウの先行きが気になる今日この頃。
+      </div>
+    </div>
+    <a href="<%= signup_or_login_url %>" class="btn-enter">
+      <%= ENV["MY_NAME"] %>について
+      <br>
+      <span>もっと知りたい</span>
+    </a>
+  </div>
+</div>
