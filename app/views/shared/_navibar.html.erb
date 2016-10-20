@@ -11,12 +11,7 @@
     <% if user_signed_in? %>
       <div class="navbar-middle">
         <ul>
-          <li>
-            <a href="<%= user_url(current_user.id) %>">
-              <i class="fa fa-home" aria-hidden="true"></i>
-              <span>ホーム</span>
-            </a>
-          </li>
+          <li><a href="<%= resume_url %>">職務経歴書</a></li>
         </ul>
       </div>
       <div class="navbar-menu">

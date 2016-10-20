@@ -4,7 +4,17 @@ module ApplicationHelper
   def hbr(text)
     html_escape(text).gsub(/\r\n|\r|\n/, "<br />").html_safe
   end
-  
+
+  # 入り口のリンク先URLを設定
+  def signup_or_login_url
+    if user_signed_in?
+      url = resume_url
+    else
+      url = new_user_registration_url
+    end
+    url
+  end
+
   # プロフィール画像のURLを設定
   def profile_image_url(user)
     unless user.image?

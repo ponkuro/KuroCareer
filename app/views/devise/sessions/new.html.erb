@@ -1,62 +1,68 @@
 <%= render "shared/navibar" %>
-<div class="container-main">
-  <div class="container-default">
+<div class="container-contents">
+  <div class="container-width_adjuster">
   
     <%= render "shared/notice" %>
-  
-    <h2>ログイン</h2>
     
-    <div class="form_frame max-wid450">
-      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="regist-header">
+      <h2>ログイン</h2>
+      アカウントをお持ちでない方は <a href="<%= new_user_registration_url %>">こちらから登録</a>
+    </div>
+
+    <div class="regist-main">
+      <%= devise_error_messages! %>
     
-        <h3>メールアドレスでログイン</h3>
-        <%= devise_error_messages! %>
-        <ul>
-          <li>
-            <%= f.email_field :email, autofocus: true, placeholder: "メールアドレス", class: "input_field" %>
-          </li>
-          <li>
-            <%= f.password_field :password, autocomplete: "off", placeholder: "パスワード", class: "input_field" %>
-          </li>
-          <li>
-            <% if devise_mapping.rememberable? -%>
-              <%= f.check_box :remember_me %>パスワードを保存する
-            <% end -%>
-          </li>
-        </ul>
-        <%= f.submit "ログインする", class: "btn-form_submit" %>
-        <div class="form_footer">
-          <a href="<%= new_password_url(resource_name) %>">パスワードを忘れた方はこちら</a>
+      <div class="regist-form col-xs-12 col-md-6">
+        <div class="regist-email">
+          <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+            <h3>メールアドレスでログイン</h3>
+            
+            <table>
+              <tr>
+                <td>
+                  <%= f.email_field :email, placeholder: "メールアドレス", class: "regist-input_field" %>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <%= f.password_field :password, autocomplete: "off", placeholder: "パスワード", class: "regist-input_field" %>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <% if devise_mapping.rememberable? %>
+                    <%= f.check_box :remember_me %>パスワードを保存する
+                  <% end %>
+                </td>
+              </tr>
+            </table>
+            <%= f.submit "ログイン", class: "btn-regist_submit" %>
+            <div class="email_footer">
+              <a href="<%= new_password_url(resource_name) %>">パスワードを忘れた方はこちら</a>
+            </div>
+          
+          <% end %>
         </div>
+      </div>
+      
+      <div class="regist-form col-xs-12 col-md-6">
+        <div class="regist-facebook">
+          <h3>Facebookアカウントで認証</h3>
+          
+          <div class="facebook_area">
+            <a href=<%= user_facebook_omniauth_authorize_url %> class="btn-facebook">
+              <i class="btn-icon_box fa fa-facebook" aria-hidden="true"></i>
+              <p>Facebookで認証</p>
+            </a>
+          </div>
+          
+          <div class="facebook_explain">
+            当サイトではFacebookアカウントはログイン認証のみに使用しており、許可なくFacebookに投稿することはありません。
+          </div>
+        </div>
+      </div>
     
-      <% end %>
-    </div>
-    
-    <div class="form_frame max-wid450">
-      <h3>SNSアカウントでログイン</h3>
-      <ul>
-        <li>
-          <a href=<%= user_facebook_omniauth_authorize_url %> class="btn-signup btn-facebook">
-            <i class="btn-icon_box fa fa-facebook" aria-hidden="true"></i>
-            <p>Facebookでログイン</p>
-          </a>
-        </li>
-        <li>
-          <a href=<%= user_twitter_omniauth_authorize_url %> class="btn-signup btn-twitter">
-            <i class="btn-icon_box fa fa-twitter" aria-hidden="true"></i>
-            <p>Twitterでログイン</p>
-          </a>
-        </li>
-        <li>
-          <p>許可なくSNSに投稿することはありません。</p>
-        </li>
-      </ul>
-    </div>
-  
-    <div class="footer-link-to-login">
-      <a href="<%= new_user_registration_url %>">新規登録する場合はこちら</a>
     </div>
   
   </div>
 </div>
-<%= render "shared/footer" %>

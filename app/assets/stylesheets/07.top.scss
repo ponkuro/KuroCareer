@@ -1,0 +1,572 @@
+/*######################*/
+/*###    共通部品    ###*/
+/*######################*/
+
+.section_container {
+    @media screen and (max-width:479px) { 
+        padding: 0 0 30px 0;
+    }
+    @media screen and (min-width:480px) and (max-width:767px) { 
+        padding: 8px 0 40px 0;
+    }
+    @media screen and (min-width:768px) and (max-width:1079px) { 
+        padding: 12px 0 50px 0;
+    }
+    @media screen and (min-width:1080px) {
+        padding: 16px 0 50px 0;
+    }
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+/*もっと知りたいボタン*/
+.btn-enter {
+    @media screen and (max-width:479px) { 
+        font-size: 11px;
+        width: 180px;
+        height: 54px;
+        border-radius: 27px;
+        padding: 9px;
+        span {
+            font-size: 16px;
+        }
+    }
+    @media screen and (min-width:480px) and (max-width:767px) { 
+        font-size: 13px;
+        width: 200px;
+        height: 60px;
+        border-radius: 30px;
+        padding: 9px;
+        span {
+            font-size: 18px;
+        }
+    }
+    @media screen and (min-width:768px) and (max-width:1079px) { 
+        font-size: 14px;
+        width: 240px;
+        height: 72px;
+        border-radius: 36px;
+        padding: 12px;
+        span {
+            font-size: 20px;
+        }
+    }
+    @media screen and (min-width:1080px) {
+        font-size: 20px;
+        width: 320px;
+        height: 96px;
+        border-radius: 48px;
+        padding: 14px;
+        span {
+            font-size: 28px;
+        }
+    }
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(24,128,96,0.9), 0 0 8px rgba(24,128,96,0.9);
+    background-color: rgba(48,216,128,0.9);
+    box-shadow: 1px 2px 2px rgba(0,0,0,0.5);
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-enter:hover {
+    background-color: rgba(24,128,96,0.9);
+    color: white;
+    text-decoration: none;
+}
+
+/*セクションの見出し*/
+.section_header {
+    h2 {
+        @media screen and (max-width:479px) { 
+            font-size: 20px;
+            margin: 4px 0;
+        }
+        @media screen and (min-width:480px) and (max-width:767px) { 
+            font-size: 24px;
+            margin: 6px 0;
+        }
+        @media screen and (min-width:768px) and (max-width:1079px) { 
+            font-size: 28px;
+            margin: 8px 0;
+        }
+        @media screen and (min-width:1080px) { 
+            font-size: 32px;
+            margin: 10px 0;
+        }
+        font-weight: normal;
+    }
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/*############################*/
+/*###    mainセクション    ###*/
+/*############################*/
+#main {
+    @media screen and (max-width:479px) { 
+        height: 235px;
+    }
+    @media screen and (min-width:480px) and (max-width:767px) { 
+        height: 340px;
+    }
+    @media screen and (min-width:768px) and (max-width:1079px) { 
+        height: 420px;
+    }
+    @media screen and (min-width:1080px) {
+        height: 560px;
+    }
+    width: 100%;
+    background: #f0e0c4 image-url("bg-image.jpg") no-repeat center;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.main_wrapper {
+    background-color: rgba(128,96,64,0.4);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    @media screen and (max-width:479px) { 
+        padding: 15px 0 0 0;
+    }
+    @media screen and (min-width:480px) and (max-width:767px) { 
+        padding: 35px 0 0 0;
+    }
+    @media screen and (min-width:768px) and (max-width:1079px) { 
+        padding: 50px 0 0 0;
+    }
+    @media screen and (min-width:1080px) {
+        padding: 70px 0 0 0;
+    }
+}
+
+.main_phrase {
+    @media screen and (max-width:479px) { 
+        h1 {
+            font-size: 24px;
+            padding: 0 0 0 10px;
+            span {
+                font-size: 38px;
+            }
+        }
+        width: 300px;
+    }
+    @media screen and (min-width:480px) and (max-width:767px) { 
+        h1 {
+            font-size: 36px;
+            padding: 0 0 0 20px;
+            span {
+                font-size: 48px;
+            }
+        }
+        width: 460px;
+    }
+    @media screen and (min-width:768px) and (max-width:1079px) { 
+        h1 {
+            font-size: 48px;
+            padding: 0 0 0 20px;
+            span {
+                font-size: 56px;
+            }
+        }
+        width: 600px;
+    }
+    @media screen and (min-width:1080px) {
+        h1 {
+            font-size: 56px;
+            padding: 0 0 0 20px;
+            span {
+                font-size: 72px;
+            }
+        }
+        width: 700px;
+    }
+    h1 {
+        color: white;
+        text-shadow: 3px 3px 3px black, 0 0 16px rgba(0,0,0,0.7);
+        margin: 0;
+    }
+    margin: 0 auto;
+}
+
+.sub_description {
+    @media screen and (max-width:479px) { 
+        font-size: 11px;
+        margin: 10px 0 15px 0;
+    }
+    @media screen and (min-width:480px) and (max-width:767px) { 
+        font-size: 16px;
+        margin: 12px 0 24px 0;
+    }
+    @media screen and (min-width:768px) and (max-width:1079px) { 
+        font-size: 18px;
+        margin: 15px 0 30px 0;
+    }
+    @media screen and (min-width:1080px) {
+        font-size: 22px;
+        margin: 25px 0 45px 0;
+    }
+    color: white;
+    text-shadow: 1px 1px 3px rgba(96,64,48,0.9), 0 0 12px rgba(96,64,48,0.9);
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/*##############################*/
+/*###    wantedセクション    ###*/
+/*##############################*/
+
+.comment_area {
+    @media screen and (max-width:479px) { 
+        max-width: 340px;
+    }
+    @media screen and (min-width:480px) and (max-width:767px) { 
+        max-width: 540px;
+    }
+    @media screen and (min-width:768px) and (max-width:1079px) { 
+        max-width: 680px;
+    }
+    @media screen and (min-width:1080px) {
+        max-width: 780px;
+    }
+    overflow: hidden;
+    margin: -3% auto;
+    margin-bottom: 0;
+}
+
+/*吹き出し用パーツ*/
+.msgbox_left,
+.msgbox_right {
+    @media screen and (max-width:479px) { 
+        width: 95%;
+    }
+    @media screen and (min-width:480px) and (max-width:767px) { 
+        width: 95%;
+    }
+    @media screen and (min-width:768px) and (max-width:1079px) { 
+        width: 620px;
+    }
+    @media screen and (min-width:1080px) {
+        width: 700px;
+    }
+}
+
+.msgbox_left{
+    margin: 5% auto 0 0;
+}
+
+.msgbox_right{
+    margin: 5% 0 0 auto;
+}
+
+.img_left,
+.img_right {
+    @media screen and (max-width:479px) { 
+        width: 55px;
+    }
+    @media screen and (min-width:480px) and (max-width:767px) { 
+        width: 60px;
+    }
+    @media screen and (min-width:768px) and (max-width:1079px) { 
+        width: 80px;
+    }
+    @media screen and (min-width:1080px) {
+        width: 100px;
+    }
+    img {
+        border-radius: 50%;
+        width: 100%
+    }
+}
+
+.img_left{
+    float: left;
+}
+
+.img_right{
+    float: right;
+}
+
+.wrapper_left {
+    @media screen and (max-width:479px) { 
+        margin: 0 0 0 80px;
+    }
+    @media screen and (min-width:480px) and (max-width:767px) { 
+        margin: 0 0 0 90px;
+    }
+    @media screen and (min-width:768px) and (max-width:1079px) { 
+        margin: 0 0 0 110px;
+    }
+    @media screen and (min-width:1080px) {
+        margin: 0 0 0 135px;
+    }
+}
+
+.wrapper_right {
+    @media screen and (max-width:479px) { 
+        margin: 0 80px 0 0;
+    }
+    @media screen and (min-width:480px) and (max-width:767px) { 
+        margin: 0 90px 0 0;
+    }
+    @media screen and (min-width:768px) and (max-width:1079px) { 
+        margin: 0 110px 0 0;
+    }
+    @media screen and (min-width:1080px) {
+        margin: 0 135px 0 0;
+    }
+}
+
+.arrow_msg_right,
+.arrow_msg_left {
+    @media screen and (max-width:479px) { 
+        font-size: 13px;
+        padding: 12px 20px;
+    }
+    @media screen and (min-width:480px) and (max-width:767px) { 
+        font-size: 14px;
+        padding: 3% 4%;
+    }
+    @media screen and (min-width:768px) and (max-width:1079px) { 
+        font-size: 18px;
+        padding: 3% 4%;
+    }
+    @media screen and (min-width:1080px) {
+        font-size: 20px;
+        padding: 3% 4%;
+    }
+    width: 100%;
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #c8c8c8;
+    border-radius: 15px;
+}
+
+.arrow_msg_right:after,
+.arrow_msg_right:before,
+.arrow_msg_left:after,
+.arrow_msg_left:before {
+    top: 35%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.arrow_msg_left:after,
+.arrow_msg_left:before {
+    right: 100%;
+}
+
+.arrow_msg_right:after,
+.arrow_msg_right:before{
+     left: 100%;
+}
+
+.arrow_msg_right:after,
+.arrow_msg_left:after {
+    @media screen and (max-width:479px) { 
+        border-width: 6px 16px;
+        margin-top: 0;
+    }
+    @media screen and (min-width:480px) and (max-width:767px) { 
+        border-width: 6px 18px;
+        margin-top: 0;
+    }
+    @media screen and (min-width:768px) and (max-width:1079px) { 
+        border-width: 8px 20px;
+        margin-top: 0;
+    }
+    @media screen and (min-width:1080px) {
+        border-width: 8px 20px;
+        margin-top: 0;
+    }
+    border-color: rgba(255, 255, 255, 0);
+}
+
+.arrow_msg_right:before,
+.arrow_msg_left:before {
+    @media screen and (max-width:479px) { 
+        border-width: 7px 18px;
+        margin-top: -1px;
+    }
+    @media screen and (min-width:480px) and (max-width:767px) { 
+        border-width: 7px 20px;
+        margin-top: -1px;
+    }
+    @media screen and (min-width:768px) and (max-width:1079px) { 
+        border-width: 9px 22px;
+        margin-top: -1px;
+    }
+    @media screen and (min-width:1080px) {
+        border-width: 9px 22px;
+        margin-top: -1px;
+    }
+    border-color: rgba(200, 200, 200, 0);
+}
+
+.arrow_msg_right:after{
+    border-left-color: #ffffff;
+}
+
+.arrow_msg_left:after{
+    border-right-color: #ffffff;
+}
+
+.arrow_msg_right:before{
+    border-left-color: #c8c8c8;
+}
+
+.arrow_msg_left:before {
+    border-right-color: #c8c8c8;
+}
+
+
+/*###############################*/
+/*###    myskillセクション    ###*/
+/*###############################*/
+
+.skill_area {
+    @media screen and (max-width:767px) { 
+        max-width: 400px;
+    }
+    @media screen and (min-width:768px) and (max-width:1199px) { 
+        max-width: 800px;
+    }
+    @media screen and (min-width:1200px) {
+        max-width: 1040px;
+    }
+    width: 90%;
+    overflow: hidden;
+    margin: 0 auto;
+    @media screen and (max-width:767px) { 
+        margin-top: -25px;
+    }
+    @media screen and (min-width:768px) and (max-width:991px) { 
+        margin-top: -30px;
+    }
+    @media screen and (min-width:992px) and (max-width:1199px) { 
+        margin-top: -35px;
+    }
+}
+
+.skillbox {
+    @media screen and (max-width:767px) { 
+        margin: 25px auto 5px auto;
+    }
+    @media screen and (min-width:768px) and (max-width:991px) { 
+        margin: 30px auto 5px auto;
+    }
+    @media screen and (min-width:992px) and (max-width:1199px) { 
+        margin: 35px auto 5px auto;
+    }
+    @media screen and (min-width:1200px) {
+        margin: 0 auto 5px auto;
+    }
+    width: 100%;
+    border: solid 1px #dddddd;
+    box-shadow: 2px 2px 4px rgba(32,32,32,0.2);
+    overflow: hidden;
+    padding: 0;
+}
+
+.skill_img {
+    img {
+        width: 100%;
+        height: 75%;
+    }
+    margin: 0;
+    padding: 0;
+}
+
+.skill_text {
+    @media screen and (max-width:479px) { 
+        font-size: 13px;
+        padding: 16px 24px;
+    }
+    @media screen and (min-width:480px) and (max-width:767px) { 
+        font-size: 14px;
+        padding: 22px 30px;
+    }
+    @media screen and (min-width:768px) and (max-width:1079px) { 
+        font-size: 14px;
+        padding: 22px 30px;
+    }
+    @media screen and (min-width:1080px) {
+        font-size: 16px;
+        padding: 22px 30px;
+    }
+    @media screen and (min-width:1200px) {
+        height: 270px;
+    }
+    margin: 0;
+}
+
+
+/*###############################*/
+/*###    profileセクション    ###*/
+/*###############################*/
+
+.profile_area {
+    @media screen and (max-width:479px) { 
+        max-width: 280px;
+    }
+    @media screen and (min-width:480px) and (max-width:767px) { 
+        max-width: 570px;
+    }
+    @media screen and (min-width:768px) and (max-width:1079px) { 
+        max-width: 650px;
+    }
+    @media screen and (min-width:1080px) {
+        max-width: 700px;
+    }
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 3%;
+}
+
+.profile_img {
+    @media screen and (max-width:479px) { 
+        width: 100px;
+    }
+    @media screen and (min-width:480px) and (max-width:767px) { 
+        width: 120px;
+    }
+    @media screen and (min-width:768px) and (max-width:1079px) { 
+        width: 140px;
+    }
+    @media screen and (min-width:1080px) {
+        width: 150px;
+    }
+    img {
+        border-radius: 30%;
+        width: 100%
+    }
+    margin: 0 3% 0 0;
+    float: left;
+}
+
+.profile_comment {
+    @media screen and (max-width:479px) { 
+        font-size: 13px;
+    }
+    @media screen and (min-width:480px) and (max-width:767px) { 
+        font-size: 14px;
+    }
+    @media screen and (min-width:768px) and (max-width:1079px) { 
+        font-size: 16px;
+    }
+    @media screen and (min-width:1080px) {
+        font-size: 17px;
+    }
+    padding: 2% 0;
+}
